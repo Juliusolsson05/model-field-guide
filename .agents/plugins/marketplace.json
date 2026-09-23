@@ -1,0 +1,12 @@
+{
+  "name": "model-field-guide",
+  "interface": { "displayName": "Model Field Guide" },
+  "plugins": [
+    {
+      "name": "model-field-guide",
+      "source": { "source": "local", "path": "./" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "reference"
+    }
+  ]
+}

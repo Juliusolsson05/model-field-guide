@@ -1,0 +1,264 @@
+# The allowlist. The ONLY place model identity is defined.
+#
+# Why a hand-kept map: no two sources share an id. Epoch groups by a display
+# family ("GPT-6 Astra") with effort suffixes on version ids, LMArena uses
+# free-text names that drift ("GPT 6 Astra (Max)" vs "gpt-6-astra-max"),
+# models.dev uses <provider>/<api id>, Steel uses vendor marketing names.
+# Matching by fuzzy string would silently merge "claude-opus-5" into
+# "claude-opus-5-5", so every mapping is explicit and reviewed by a human.
+#
+# Fields:
+#   id        our stable id == the vendor API id where one exists
+#   tier      frontier | open-frontier | value | fast-cheap | legacy
+#   expect    sources that MUST contain this model; if one loses it the nightly
+#             FAILS (catches an upstream rename silently dropping a model).
+#             Everything else may be absent (a model released today is not in
+#             Epoch yet) and renders as "n/a".
+#   sources:
+#     models_dev   "<provider>/<model>" key in models.dev api.json
+#     epoch        Epoch model_group (also the ECI "Model" column)
+#     lmarena      normalized base names (lowercase, spaces->'-'); a row matches
+#                  when its normalized name == base, or base + "-" + effort
+#                  words / snapshot date. See pipeline/parse/lmarena.py.
+#     tau2         tau2-bench submission "model_name" values
+#     steel        Steel leaderboard systemName prefixes (vendor-reported)
+
+models:
+  - id: claude-opus-5-5
+    display: Claude Opus 5.5
+    lab: Anthropic
+    tier: frontier
+    expect: [models_dev]
+    sources:
+      models_dev: anthropic/claude-opus-5-5
+      epoch: Claude Opus 5.5
+      lmarena: [claude-opus-5.5, claude-opus-5-5]
+      steel: [Claude Opus 5.5]
+
+  - id: claude-fable-5-1
+    display: Claude Fable 5.1
+    lab: Anthropic
+    tier: frontier
+    expect: [models_dev, epoch]
+    sources:
+      models_dev: anthropic/claude-fable-5-1
+      epoch: Claude Fable 5.1
+      lmarena: [claude-fable-5.1, claude-fable-5-1]
+      steel: [Claude Fable 5.1]
+
+  - id: claude-sonnet-5
+    display: Claude Sonnet 5
+    lab: Anthropic
+    tier: value
+    expect: [models_dev, epoch]
+    sources:
+      models_dev: anthropic/claude-sonnet-5
+      epoch: Claude Sonnet 5
+      lmarena: [claude-sonnet-5]
+      steel: [Claude Sonnet 5]
+
+  - id: claude-haiku-4-5
+    display: Claude Haiku 4.5
+    lab: Anthropic
+    tier: fast-cheap
+    expect: [models_dev]
+    sources:
+      models_dev: anthropic/claude-haiku-4-5
+      epoch: Claude Haiku 4.5
+      lmarena: [claude-haiku-4-5, claude-haiku-4.5, claude-haiku-4-5-20251001]
+      steel: [Claude Haiku 4.5]
+
+  - id: gpt-6-astra
+    display: GPT-6 Astra
+    lab: OpenAI
+    tier: frontier
+    expect: [models_dev, epoch]
+    sources:
+      models_dev: openai/gpt-6-astra
+      epoch: GPT-6 Astra
+      lmarena: [gpt-6-astra]
+      steel: [GPT-6 Astra]
+
+  - id: gpt-6-sol
+    display: GPT-6 Sol
+    lab: OpenAI
+    tier: value
+    expect: [models_dev]
+    sources:
+      models_dev: openai/gpt-6-sol
+      epoch: GPT-6 Sol
+      lmarena: [gpt-6-sol]
+      steel: [GPT-6 Sol]
+
+  - id: gpt-6-luna
+    display: GPT-6 Luna
+    lab: OpenAI
+    tier: fast-cheap
+    expect: [models_dev]
+    sources:
+      models_dev: openai/gpt-6-luna
+      epoch: GPT-6 Luna
+      lmarena: [gpt-6-luna]
+      steel: [GPT-6 Luna]
+
+  - id: gemini-3.1-pro-preview
+    display: Gemini 3.1 Pro (preview)
+    lab: Google
+    tier: frontier
+    expect: [models_dev, epoch]
+    sources:
+      models_dev: google/gemini-3.1-pro-preview
+      epoch: Gemini 3.1 Pro
+      lmarena: [gemini-3.1-pro-preview, gemini-3.1-pro]
+      tau2: [Gemini 3.1 Pro Preview, Gemini 3.1 Pro]
+      steel: [Gemini 3.1 Pro]
+
+  - id: gemini-3.8-flash
+    display: Gemini 3.8 Flash
+    lab: Google
+    tier: fast-cheap
+    expect: [models_dev, epoch]
+    sources:
+      models_dev: google/gemini-3.8-flash
+      epoch: Gemini 3.8 Flash
+      lmarena: [gemini-3.8-flash]
+      steel: [Gemini 3.8 Flash]
+
+  - id: grok-4.7
+    display: Grok 4.7
+    lab: xAI
+    tier: value
+    expect: [models_dev]
+    sources:
+      models_dev: xai/grok-4.7
+      epoch: Grok 4.7
+      lmarena: [grok-4.7]
+      steel: [Grok 4.7]
+
+  - id: muse-spark-1.3
+    display: Muse Spark 1.3
+    lab: Meta
+    tier: value
+    expect: [models_dev, epoch]
+    sources:
+      models_dev: meta/muse-spark-1.3
+      epoch: Muse Spark 1.3
+      lmarena: [muse-spark-1.3]
+      steel: [Muse Spark 1.3]
+
+  - id: kimi-k3
+    display: Kimi K3
+    lab: Moonshot
+    tier: open-frontier
+    expect: [models_dev, epoch]
+    sources:
+      models_dev: moonshotai/kimi-k3
+      epoch: Kimi K3
+      lmarena: [kimi-k3]
+      tau2: [Kimi K3]
+      steel: [Kimi K3]
+
+  - id: glm-5.3
+    display: GLM-5.3
+    lab: Z.ai
+    tier: open-frontier
+    expect: [models_dev, epoch]
+    sources:
+      models_dev: zhipuai/glm-5.3
+      epoch: GLM-5.3
+      lmarena: [glm-5.3]
+      steel: [GLM-5.3]
+
+  - id: qwen3.8-max
+    display: Qwen3.8-Max
+    lab: Alibaba
+    tier: value
+    expect: [models_dev]
+    sources:
+      models_dev: alibaba/qwen3.8-max
+      # Epoch tracks the original and the 0902 snapshot as separate groups; the
+      # API alias points at 0902 today, so that is the one we follow.
+      epoch: Qwen3.8 Max (0902)
+      lmarena: [qwen3.8-max-0902, qwen3.8-max]
+      tau2: [Qwen3.8 Max, Qwen 3.8 Max]
+      steel: [Qwen3.8-Max]
+
+  - id: deepseek-v4-pro
+    display: DeepSeek V4 Pro (0813)
+    lab: DeepSeek
+    tier: open-frontier
+    expect: [models_dev]
+    sources:
+      models_dev: deepseek/deepseek-v4-pro
+      epoch: DeepSeek V4 Pro 0813
+      lmarena: [deepseek-v4-pro-0813, deepseek-v4-pro-20260813]
+      steel: [DeepSeek V4 Pro]
+
+  - id: deepseek-flash
+    display: DeepSeek V4.1 Flash
+    lab: DeepSeek
+    tier: fast-cheap
+    expect: [models_dev]
+    sources:
+      models_dev: deepseek/deepseek-flash
+      epoch: DeepSeek V4.1 Flash
+      lmarena: [deepseek-v4.1-flash]
+      steel: [DeepSeek V4.1 Flash]
+
+  - id: mimo-v2.6-pro
+    display: MiMo-V2.6-Pro
+    lab: Xiaomi
+    tier: open-frontier
+    expect: [models_dev]
+    sources:
+      models_dev: xiaomi/mimo-v2.6-pro
+      epoch: MiMo-V2.6-Pro
+      lmarena: [mimo-v2.6-pro]
+      steel: [MiMo-V2.6-Pro]
+
+  - id: minimax-m3
+    display: MiniMax M3
+    lab: MiniMax
+    tier: fast-cheap
+    expect: [models_dev, epoch]
+    sources:
+      models_dev: minimax/MiniMax-M3
+      epoch: MiniMax-M3
+      lmarena: [minimax-m3]
+      steel: [MiniMax M3]
+
+  - id: mistral-medium-3-5
+    display: Mistral Medium 3.5
+    lab: Mistral
+    tier: value
+    expect: [models_dev]
+    sources:
+      # models.dev keys Medium 3.5 by its dated API id (April 2026 release).
+      models_dev: mistral/mistral-medium-2604
+      epoch: Mistral Medium 3.5
+      lmarena: [mistral-medium-3.5, mistral-medium-2604]
+      steel: [Mistral Medium 3.5]
+
+  - id: claude-opus-5
+    display: Claude Opus 5
+    lab: Anthropic
+    tier: legacy
+    expect: [models_dev, epoch]
+    sources:
+      models_dev: anthropic/claude-opus-5
+      epoch: Claude Opus 5
+      lmarena: [claude-opus-5]
+      tau2: [Claude Opus 5]
+      steel: [Claude Opus 5]
+
+  - id: gpt-5.6-sol
+    display: GPT-5.6 Sol
+    lab: OpenAI
+    tier: legacy
+    expect: [models_dev, epoch]
+    sources:
+      models_dev: openai/gpt-5.6-sol
+      epoch: GPT-5.6 Sol
+      lmarena: [gpt-5.6-sol]
+      tau2: [GPT-5.6 Sol]
+      steel: [GPT-5.6 Sol]

@@ -1,0 +1,14 @@
+{
+  "name": "model-field-guide",
+  "owner": { "name": "Julius Olsson", "url": "https://github.com/Juliusolsson05" },
+  "plugins": [
+    {
+      "name": "model-field-guide",
+      "source": "./",
+      "description": "Nightly-updated, human-edited guide to which frontier AI model to use for which job.",
+      "license": "MIT",
+      "category": "reference",
+      "keywords": ["llm", "model-selection", "benchmarks", "leaderboard", "agents"]
+    }
+  ]
+}

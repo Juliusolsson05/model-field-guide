@@ -1,0 +1,18 @@
+[project]
+name = "model-field-guide"
+version = "0.1.0"
+description = "Nightly-updated, human-edited field guide to which frontier AI model to use for which job (an Agent Skill)."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = ["pyyaml>=6.0"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.uv]
+package = false

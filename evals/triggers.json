@@ -1,0 +1,27 @@
+{
+  "_why": "agentskills.io trigger-eval method: ~half should trigger, ~half are near misses that must NOT trigger. Run each 3x; a query passes at a trigger rate >= 0.5. Iterate on the SKILL.md description, never on these queries.",
+  "should_trigger": [
+    "Which model should I use to migrate our 400k-line Java monolith to Kotlin?",
+    "is grok 4.7 better than gpt-6 sol for coding?",
+    "cheapest model that's still decent for extracting fields from 10k invoices",
+    "what's the best model for computer use / browser automation right now",
+    "just give me the current LLM leaderboard",
+    "I'm spawning 12 parallel subagents, what should they run on?",
+    "Opus 5.5 vs Fable 5.1 for a long refactor, which one?",
+    "best open-weights model I can self-host for coding",
+    "how much does gpt-6 astra cost per million tokens and what's its context window",
+    "which model has the best frontend/UI taste at the moment?"
+  ],
+  "should_not_trigger": [
+    "Switch this file from the OpenAI SDK to the Anthropic SDK",
+    "What is a transformer and how does attention work?",
+    "fix the failing test in tests/test_parse.py",
+    "how do I set the default model in Claude Code settings.json",
+    "write a python function that computes a moving average",
+    "explain what reasoning effort means in the OpenAI API",
+    "summarize this PR for me",
+    "rename the variable model to llm across the repo",
+    "what does the HTTP 429 status code mean",
+    "add a retry with exponential backoff to fetch.py"
+  ]
+}

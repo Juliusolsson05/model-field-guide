@@ -1,0 +1,100 @@
+name: nightly
+
+# Fetch -> validate -> render -> commit only if changed -> tag -> issues.
+#
+# Choices that look odd but are deliberate:
+# - cron at :41 UTC, not :00: top-of-hour scheduled runs are the ones GitHub
+#   delays or drops under load.
+# - Issues, not PRs, for "new model / stale prose / source down": PRs made with
+#   GITHUB_TOKEN need a repo setting that is off by default and their CI waits
+#   for manual approval. An issue needs only `issues: write`.
+# - No keepalive commits. Scheduled workflows in public repos stop after 60
+#   days without repo activity; Epoch updates daily, so real data commits keep
+#   it alive, and the watchdog step fails loudly if data stops moving for 45
+#   days. (A keepalive action was blocked by GitHub for ToS violation in 2025.)
+# - Action refs are pinned to full SHAs (setup-uv publishes no floating major).
+
+on:
+  schedule:
+    - cron: "41 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nightly
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    if: github.repository == 'Juliusolsson05/model-field-guide'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
+        with:
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+
+      - run: uv sync --frozen
+
+      - name: Tests (recorded fixtures; a broken renderer never reaches main)
+        run: uv run --frozen pytest -q
+
+      - name: Fetch, validate, render
+        run: uv run --frozen python -m pipeline.nightly --issues-dir .nightly
+
+      - name: Commit and tag if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ skills/model-field-guide/tables/ skills/model-field-guide/references/models/_index.md
+          if git diff --cached --quiet; then
+            echo "No data changes." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          day=$(date -u +%F)
+          { echo "### Changed files"; git diff --cached --stat; } | tee -a "$GITHUB_STEP_SUMMARY"
+          git commit -m "chore(data): snapshot $day"
+          git push origin HEAD
+          # Immutable daily tag for pinning; a second run on the same day keeps the first tag.
+          if git tag "snapshot-$day" 2>/dev/null; then git push origin "snapshot-$day"; fi
+
+      - name: Open or update issues for humans
+        if: hashFiles('.nightly/*.md') != ''
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: uv run --frozen python -m pipeline.issues .nightly
+
+      - name: Watchdog (data has not changed for too long)
+        run: |
+          age=$(( ( $(date +%s) - $(git log -1 --format=%ct -- data/) ) / 86400 ))
+          echo "data last changed $age days ago" >> "$GITHUB_STEP_SUMMARY"
+          if [ "$age" -gt 45 ]; then
+            echo "::error::data unchanged for $age days; upstreams may be dead and the schedule will be auto-disabled at 60"
+            exit 1
+          fi
+
+      - name: Failure issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create nightly-failure --force --color b60205 >/dev/null 2>&1 || true
+          url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          n=$(gh issue list --label nightly-failure --state open --json number --jq '.[0].number')
+          if [ -n "$n" ]; then
+            gh issue comment "$n" --body "Failed again: $url"
+          else
+            gh issue create --title "Nightly snapshot failing" --label nightly-failure \
+              --body "The nightly run failed and committed nothing (yesterday's data is intact). Run: $url"
+          fi

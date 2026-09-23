@@ -1,0 +1,8 @@
+{
+  "name": "model-field-guide",
+  "description": "Nightly-updated, human-edited guide to which frontier AI model to use for which job.",
+  "author": { "name": "Julius Olsson" },
+  "homepage": "https://github.com/Juliusolsson05/model-field-guide",
+  "repository": "https://github.com/Juliusolsson05/model-field-guide",
+  "license": "MIT"
+}

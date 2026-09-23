@@ -1,0 +1,27 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
+        with:
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+      - run: uv sync --frozen
+      # Tests cover the pipeline on recorded payloads AND the skill's spec
+      # limits (name == folder, description <= 1024, one SKILL.md in the repo).
+      - run: uv run --frozen pytest -q
+      # A PR that edits models.yaml or prose must still produce the same tables
+      # from the fixtures without a validation error.
+      - run: uv run --frozen python -m pipeline.nightly --offline --raw tests/fixtures/raw --issues-dir /tmp/nightly
