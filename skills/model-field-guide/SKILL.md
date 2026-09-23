@@ -8,8 +8,8 @@ description: >-
   whenever the user asks which model, LLM, coding agent or provider to use;
   compares models (e.g. "Opus vs Fable", "is Grok better than Sol"); asks for
   the current leaderboard, benchmark scores, cost or speed per task; wants
-  cheap or open-weights options; or is choosing models for subagents or
-  parallel workers. Your training data is out of date here, since models ship
+  cheap or open-weights options; or is deciding what model subagents,
+  parallel workers or a fleet of agents should run on. Your training data is out of date here, since models ship
   weekly, so read this skill instead of answering from memory.
 license: MIT
 compatibility: Needs file read access. Optional network access to refresh tables older than 7 days.
