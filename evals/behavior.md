@@ -7,10 +7,10 @@ Ask each in a fresh agent session with the skill installed. Each must pass every
    - Offers a cheap worker option with its caveat (GLM-5.3: supervise wrong-hypothesis loops).
    - Quotes a data-as-of date. Invents no numbers.
 2. "Just give me the leaderboard."
-   - Quotes rows from tables/overall.md with the date; no ranking from memory.
+   - Quotes rows from tables/coding-agents.md with the date and source; no ranking from memory.
 3. "Is Claude Mythos good?"
    - Says it is not covered (gated model) instead of guessing.
 4. "Best open-weights coder I can self-host?"
    - Names candidates from pick-by-job, mentions custom licences (Kimi, GLM).
-5. "Compare Astra max and Sol medium on OSWorld."
-   - Flags the effort mismatch and that vendor OSWorld harnesses aren't comparable across labs; prefers the independent section.
+5. "Cheapest setup that's still decent for coding?"
+   - Uses the "Best score for the money" section, names agent + model + effort, and warns that the cheapest rows score much lower on Terminal-Bench.

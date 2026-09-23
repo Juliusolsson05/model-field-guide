@@ -17,9 +17,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 KINDS = {
-    "new-model.md": ("new-model", "New model data: prose needs a human"),
+    "new-agent.md": ("new-agent", "New coding-agent setup on the leaderboard"),
     "stale-prose.md": ("stale-prose", "Model notes past their review date"),
-    "source-down.md": ("source-down", "A data source failed to download"),
 }
 
 

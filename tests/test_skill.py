@@ -9,7 +9,7 @@ from pathlib import Path
 
 import yaml
 
-from pipeline import build, prose
+from pipeline import prose
 
 ROOT = Path(__file__).resolve().parent.parent
 SKILL_DIR = ROOT / "skills" / "model-field-guide"
@@ -40,14 +40,14 @@ def test_only_one_skill_md_in_the_repo():
     assert found == [SKILL_DIR / "SKILL.md"]
 
 
-def test_every_allowlisted_model_has_valid_prose():
-    ids = [m["id"] for m in build.load_allowlist()]
-    notes, problems = prose.load_all(SKILL_DIR / "references" / "models", ids)
+def test_every_notes_file_is_valid():
+    notes, problems = prose.load_dir(SKILL_DIR / "references" / "models")
     assert not problems, problems
+    assert len(notes) >= 10
     for mid, fm in notes.items():
         assert fm["review_by"] > fm["reviewed"], mid
         if fm["status"] == "legacy":
-            assert fm["superseded_by"] in ids, f"{mid}: legacy models must name an allowlisted successor"
+            assert fm["superseded_by"], f"{mid}: legacy notes must name a successor"
 
 
 def test_referenced_paths_exist():

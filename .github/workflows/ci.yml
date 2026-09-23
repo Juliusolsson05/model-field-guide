@@ -22,6 +22,5 @@ jobs:
       # Tests cover the pipeline on recorded payloads AND the skill's spec
       # limits (name == folder, description <= 1024, one SKILL.md in the repo).
       - run: uv run --frozen pytest -q
-      # A PR that edits models.yaml or prose must still produce the same tables
-      # from the fixtures without a validation error.
-      - run: uv run --frozen python -m pipeline.nightly --offline --raw tests/fixtures/raw --issues-dir /tmp/nightly
+      # A PR that edits the parser or notes must still render from the recorded page.
+      - run: uv run --frozen python -m pipeline.nightly --html tests/fixtures/coding-agents-2026-09-22.html.gz --issues-dir /tmp/nightly

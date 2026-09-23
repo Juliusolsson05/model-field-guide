@@ -1,6 +1,6 @@
 name: nightly
 
-# Fetch -> validate -> render -> commit only if changed -> tag -> issues.
+# Fetch the Artificial Analysis coding-agent leaderboard -> validate -> render -> commit only if changed -> tag -> issues.
 #
 # Choices that look odd but are deliberate:
 # - cron at :41 UTC, not :00: top-of-hour scheduled runs are the ones GitHub
@@ -9,9 +9,9 @@ name: nightly
 #   GITHUB_TOKEN need a repo setting that is off by default and their CI waits
 #   for manual approval. An issue needs only `issues: write`.
 # - No keepalive commits. Scheduled workflows in public repos stop after 60
-#   days without repo activity; Epoch updates daily, so real data commits keep
-#   it alive, and the watchdog step fails loudly if data stops moving for 45
-#   days. (A keepalive action was blocked by GitHub for ToS violation in 2025.)
+#   days without repo activity; the leaderboard moves every few days, so real
+#   data commits keep it alive, and the watchdog step fails loudly if data
+#   stops moving for 45 days. (A keepalive action was blocked by GitHub for ToS violation in 2025.)
 # - Action refs are pinned to full SHAs (setup-uv publishes no floating major).
 
 on:
@@ -46,7 +46,7 @@ jobs:
 
       - run: uv sync --frozen
 
-      - name: Tests (recorded fixtures; a broken renderer never reaches main)
+      - name: Tests (recorded page; a broken parser never reaches main)
         run: uv run --frozen pytest -q
 
       - name: Fetch, validate, render
