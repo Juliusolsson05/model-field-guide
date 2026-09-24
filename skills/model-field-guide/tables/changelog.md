@@ -4,6 +4,10 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-09-24
+
+- New: **Claude Code - Opus 5.5 (max)** at #1, index 66.0.
+
 ## 2026-09-23
 
 Initial snapshot.
