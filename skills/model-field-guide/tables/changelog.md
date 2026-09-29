@@ -4,6 +4,14 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-09-29
+
+- New: **Claude Code - Sonnet 5.5 (max)** at #1, index 68.4.
+- New: **Claude Code - Sonnet 5.5 (xhigh)** at #3, index 62.9.
+- New: **Claude Code - Sonnet 5.5 (high)** at #11, index 55.0.
+- New: **Claude Code - Sonnet 5.5 (medium)** at #18, index 45.9.
+- New: **Claude Code - Sonnet 5.5 (low)** at #22, index 42.1.
+
 ## 2026-09-24
 
 - New: **Claude Code - Opus 5.5 (max)** at #1, index 66.0.
