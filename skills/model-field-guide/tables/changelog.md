@@ -4,6 +4,14 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-09-30
+
+- New: **Codex - GPT-6.1 Sol (xhigh)** at #4, index 62.9.
+- New: **Codex - GPT-6.1 Sol (medium)** at #8, index 61.4.
+- New: **Codex - GPT-6.1 Sol (high)** at #9, index 60.1.
+- New: **Codex - GPT-6.1 Sol (max)** at #10, index 60.1.
+- New: **Codex - GPT-6.1 Sol (low)** at #13, index 57.2.
+
 ## 2026-09-29
 
 - New: **Claude Code - Sonnet 5.5 (max)** at #1, index 68.4.
