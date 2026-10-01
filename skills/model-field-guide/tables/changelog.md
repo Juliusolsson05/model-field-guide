@@ -4,6 +4,10 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-10-01
+
+- New: **Antigravity CLI - Gemini 4 Argon (high)** at #3, index 63.8.
+
 ## 2026-09-30
 
 - New: **Codex - GPT-6.1 Sol (xhigh)** at #4, index 62.9.
