@@ -4,6 +4,10 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-10-05
+
+- Index methodology changed: v1.5 -> . Scores before and after are not comparable.
+
 ## 2026-10-01
 
 - New: **Antigravity CLI - Gemini 4 Argon (high)** at #3, index 63.8.
