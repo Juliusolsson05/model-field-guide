@@ -11,20 +11,20 @@ Human notes exist for these models. A model on the leaderboard without notes her
 | Claude Fable 5.1 | `claude-fable-5-1` | settled | 2026-09-22 | [claude-fable-5-1.md](claude-fable-5-1.md) |
 | Claude Haiku 4.5 | `claude-haiku-4-5` | settled | 2026-09-22 | [claude-haiku-4-5.md](claude-haiku-4-5.md) |
 | Claude Opus 5 | `claude-opus-5` | legacy (superseded by `claude-opus-5-5`) | 2026-09-22 | [claude-opus-5.md](claude-opus-5.md) |
-| Claude Opus 5.5 | `claude-opus-5-5` | provisional | 2026-09-22 | [claude-opus-5-5.md](claude-opus-5-5.md) |
+| Claude Opus 5.5 | `claude-opus-5-5` | provisional **STALE** | 2026-09-22 | [claude-opus-5-5.md](claude-opus-5-5.md) |
 | Claude Sonnet 5 | `claude-sonnet-5` | settled | 2026-09-22 | [claude-sonnet-5.md](claude-sonnet-5.md) |
 | DeepSeek V4 Pro | `deepseek-v4-pro` | settled | 2026-09-22 | [deepseek-v4-pro.md](deepseek-v4-pro.md) |
-| DeepSeek V4.1 Flash | `deepseek-flash` | provisional | 2026-09-22 | [deepseek-flash.md](deepseek-flash.md) |
+| DeepSeek V4.1 Flash | `deepseek-flash` | provisional **STALE** | 2026-09-22 | [deepseek-flash.md](deepseek-flash.md) |
 | Gemini 3.1 Pro (preview) | `gemini-3.1-pro-preview` | settled | 2026-09-22 | [gemini-3.1-pro-preview.md](gemini-3.1-pro-preview.md) |
 | Gemini 3.8 Flash | `gemini-3.8-flash` | settled | 2026-09-22 | [gemini-3.8-flash.md](gemini-3.8-flash.md) |
 | GLM-5.3 | `glm-5.3` | settled | 2026-09-22 | [glm-5.3.md](glm-5.3.md) |
 | GPT-5.6 Sol | `gpt-5.6-sol` | legacy (superseded by `gpt-6-sol`) | 2026-09-22 | [gpt-5.6-sol.md](gpt-5.6-sol.md) |
 | GPT-6 Astra | `gpt-6-astra` | settled | 2026-09-22 | [gpt-6-astra.md](gpt-6-astra.md) |
-| GPT-6 Luna | `gpt-6-luna` | provisional | 2026-09-22 | [gpt-6-luna.md](gpt-6-luna.md) |
-| GPT-6 Sol | `gpt-6-sol` | provisional | 2026-09-22 | [gpt-6-sol.md](gpt-6-sol.md) |
-| Grok 4.7 | `grok-4.7` | provisional | 2026-09-22 | [grok-4.7.md](grok-4.7.md) |
+| GPT-6 Luna | `gpt-6-luna` | provisional **STALE** | 2026-09-22 | [gpt-6-luna.md](gpt-6-luna.md) |
+| GPT-6 Sol | `gpt-6-sol` | provisional **STALE** | 2026-09-22 | [gpt-6-sol.md](gpt-6-sol.md) |
+| Grok 4.7 | `grok-4.7` | provisional **STALE** | 2026-09-22 | [grok-4.7.md](grok-4.7.md) |
 | Kimi K3 | `kimi-k3` | settled | 2026-09-22 | [kimi-k3.md](kimi-k3.md) |
-| MiMo-V2.6-Pro | `mimo-v2.6-pro` | provisional | 2026-09-22 | [mimo-v2.6-pro.md](mimo-v2.6-pro.md) |
+| MiMo-V2.6-Pro | `mimo-v2.6-pro` | provisional **STALE** | 2026-09-22 | [mimo-v2.6-pro.md](mimo-v2.6-pro.md) |
 | MiniMax M3 | `minimax-m3` | settled | 2026-09-22 | [minimax-m3.md](minimax-m3.md) |
 | Mistral Medium 3.5 | `mistral-medium-3-5` | settled | 2026-09-22 | [mistral-medium-3-5.md](mistral-medium-3-5.md) |
 | Muse Spark 1.3 | `muse-spark-1.3` | settled | 2026-09-22 | [muse-spark-1.3.md](muse-spark-1.3.md) |
