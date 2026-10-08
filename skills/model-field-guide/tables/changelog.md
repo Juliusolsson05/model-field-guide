@@ -4,6 +4,15 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-10-08
+
+- New: **Claude Code - Step 5 Preview** at #22, index 51.2.
+- New: **Claude Code - Haiku 5.5 (xhigh)** at #31, index 41.4.
+- New: **Claude Code - Haiku 5.5 (max)** at #34, index 36.5.
+- New: **Claude Code - Haiku 5.5 (high)** at #35, index 35.1.
+- New: **Claude Code - Haiku 5.5 (medium)** at #36, index 33.6.
+- New: **Claude Code - Haiku 5.5 (low)** at #37, index 28.2.
+
 ## 2026-10-05
 
 - Index methodology changed: v1.5 -> . Scores before and after are not comparable.
