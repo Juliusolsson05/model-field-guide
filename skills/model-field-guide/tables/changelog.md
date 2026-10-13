@@ -4,6 +4,11 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-10-13
+
+- New: **Muse Code - Muse Wonder Full (max)** at #2, index 68.0.
+- New: **Muse Code - Muse Wonder (max)** at #5, index 63.5.
+
 ## 2026-10-08
 
 - New: **Claude Code - Step 5 Preview** at #22, index 51.2.
