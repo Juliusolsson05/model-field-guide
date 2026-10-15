@@ -4,6 +4,10 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-10-15
+
+- New: **Devin Fusion CLI - Claude Opus 5.5 Max + GPT-6 Luna High** at #2, index 68.1.
+
 ## 2026-10-13
 
 - New: **Muse Code - Muse Wonder Full (max)** at #2, index 68.0.
