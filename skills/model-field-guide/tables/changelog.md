@@ -4,6 +4,10 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-10-16
+
+- New: **Muse Code - Muse Spark Open (xhigh)** at #35, index 41.2.
+
 ## 2026-10-15
 
 - New: **Devin Fusion CLI - Claude Opus 5.5 Max + GPT-6 Luna High** at #2, index 68.1.
