@@ -4,6 +4,10 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-10-17
+
+- New: **Mirror - Beam 1.0** at #42, index 27.7.
+
 ## 2026-10-16
 
 - New: **Muse Code - Muse Spark Open (xhigh)** at #35, index 41.2.
