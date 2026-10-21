@@ -4,6 +4,10 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-10-21
+
+- Codex - DeepSeek V4 Flash 0731 (max): $0.09 -> $0.08 per task.
+
 ## 2026-10-17
 
 - New: **Mirror - Beam 1.0** at #42, index 27.7.
