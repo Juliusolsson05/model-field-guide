@@ -4,6 +4,10 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-10-22
+
+- Muse Code - Muse Spark 1.3 (max): $3.83 -> $3.39 per task.
+
 ## 2026-10-21
 
 - Codex - DeepSeek V4 Flash 0731 (max): $0.09 -> $0.08 per task.
