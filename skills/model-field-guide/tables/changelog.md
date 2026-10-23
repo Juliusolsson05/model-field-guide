@@ -4,6 +4,58 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-10-23
+
+- New: **Codex - DeepSeek V4.1 Flash (max)** at #13, index 47.3.
+- New: **DeepSeek Harness - DeepSeek V4.1 Flash 1017 (max)** at #15, index 46.3.
+- New: **Claude Code - Step 5 Preview ({'subagents': True})** at #17, index 43.1.
+- Removed: Claude Code - Haiku 5.5 (high) (was index 35.1).
+- Removed: Claude Code - Haiku 5.5 (low) (was index 28.2).
+- Removed: Claude Code - Haiku 5.5 (medium) (was index 33.6).
+- Removed: Claude Code - Haiku 5.5 (xhigh) (was index 41.4).
+- Removed: Claude Code - Opus 5 (max) (was index 59.7).
+- Removed: Claude Code - Sonnet 5.5 (high) (was index 55.0).
+- Removed: Claude Code - Sonnet 5.5 (low) (was index 42.1).
+- Removed: Claude Code - Sonnet 5.5 (medium) (was index 45.9).
+- Removed: Claude Code - Sonnet 5.5 (xhigh) (was index 62.9).
+- Removed: Claude Code - Step 5 Preview (was index 51.2).
+- Removed: Codex - DeepSeek V4 Flash 0731 (max) (was index 38.7).
+- Removed: Codex - DeepSeek V4 Pro 0813 (max) (was index 43.1).
+- Removed: Codex - GPT-5.6 Luna (max) (was index 43.2).
+- Removed: Codex - GPT-5.6 Sol (max) (was index 54.6).
+- Removed: Codex - GPT-6 Sol (max) (was index 56.7).
+- Removed: Codex - GPT-6.1 Sol (high) (was index 60.1).
+- Removed: Codex - GPT-6.1 Sol (low) (was index 57.2).
+- Removed: Codex - GPT-6.1 Sol (medium) (was index 61.4).
+- Removed: Codex - GPT-6.1 Sol (xhigh) (was index 62.9).
+- Removed: Grok Build - Grok 4.6 (xhigh) (was index 47.0).
+- Removed: Muse Code - Muse Spark 1.3 (xhigh) (was index 48.3).
+- Claude Code - Opus 5.5 (max): index 66.0 -> 61.7 (now #1).
+- Claude Code - Opus 5.5 (max): $13.04 -> $11.42 per task.
+- Devin Fusion CLI - Claude Opus 5.5 Max + GPT-6 Luna High: index 68.2 -> 61.5 (now #2).
+- Devin Fusion CLI - Claude Opus 5.5 Max + GPT-6 Luna High: $9.02 -> $8.0 per task.
+- Claude Code - Sonnet 5.5 (max): index 68.4 -> 59.3 (now #3).
+- Muse Code - Muse Wonder Full (max): index 68.0 -> 58.9 (now #4).
+- Devin Fusion CLI - Claude Fable 5.1 XHigh + SWE-2 Medium: index 61.7 -> 58.7 (now #5).
+- Claude Code - Fable 5.1 (max) (with fallback): index 62.2 -> 57.6 (now #6).
+- Codex - GPT-6 Astra (max): index 61.6 -> 54.7 (now #7).
+- Codex - GPT-6.1 Sol (max): index 60.1 -> 54.1 (now #8).
+- Antigravity CLI - Gemini 4 Argon (high): index 63.8 -> 53.2 (now #9).
+- Devin Fusion CLI - GPT-6 Astra XHigh + SWE-2 Medium: index 58.9 -> 53.1 (now #10).
+- Muse Code - Muse Wonder (max): index 63.7 -> 52.0 (now #11).
+- Opencode - GLM-5.3 (max): index 53.6 -> 48.9 (now #12).
+- Opencode - GLM-5.3 (max): $4.37 -> $5.23 per task.
+- Grok Build - Grok 4.7 (xhigh): index 56.3 -> 46.6 (now #14).
+- Muse Code - Muse Spark 1.3 (max): index 54.3 -> 45.7 (now #16).
+- Muse Code - Muse Spark 1.3 (max): $3.39 -> $3.91 per task.
+- Kimi Code CLI - Kimi K3: index 51.9 -> 41.4 (now #18).
+- Claude Code - Qwen3.8 Max: index 43.3 -> 39.2 (now #19).
+- Antigravity SDK - Gemini 3.8 Flash (high): index 41.9 -> 33.3 (now #21).
+- Codex - GPT-6 Luna (max): index 41.1 -> 31.1 (now #22).
+- Codex - GPT-6 Luna (max): $0.18 -> $0.16 per task.
+- Muse Code - Muse Spark Open (xhigh): index 41.2 -> 26.3 (now #23).
+- Mirror - Beam 1.0: index 27.7 -> 20.5 (now #24).
+
 ## 2026-10-22
 
 - Muse Code - Muse Spark 1.3 (max): $3.83 -> $3.39 per task.
