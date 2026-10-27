@@ -4,6 +4,15 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-10-27
+
+- New: **Codex - GPT-6.1 Terra (xhigh)** at #13, index 48.2.
+- New: **Codex - GPT-6.1 Terra (max)** at #14, index 48.1.
+- New: **Codex - GPT-6.1 Terra (high)** at #17, index 46.3.
+- New: **Codex - GPT-6.1 Terra (medium)** at #21, index 42.0.
+- New: **Codex - GPT-6.1 Terra (none)** at #24, index 39.2.
+- New: **Codex - GPT-6.1 Terra (low)** at #26, index 34.9.
+
 ## 2026-10-23
 
 - New: **Codex - DeepSeek V4.1 Flash (max)** at #13, index 47.3.
