@@ -4,6 +4,59 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-10-28
+
+- New: **Claude Code - Claude Opus 5.5 (Max, Default Fallback)** at #1, index 61.7.
+- New: **Claude Code - Claude Sonnet 5.5 (Max, Default Fallback)** at #3, index 59.3.
+- New: **Muse Code - Muse Wonder Full (Max)** at #4, index 58.9.
+- New: **Claude Code - Claude Fable 5.1 (Max, Default Fallback)** at #6, index 57.6.
+- New: **Codex - GPT-6 Astra (Max)** at #7, index 54.7.
+- New: **Codex - GPT-6.1 Sol (Max)** at #8, index 54.1.
+- New: **Antigravity CLI - Gemini 4 Argon (High)** at #9, index 53.2.
+- New: **Muse Code - Muse Wonder (Max)** at #11, index 52.0.
+- New: **Opencode - GLM-5.3 (Max)** at #12, index 48.9.
+- New: **Codex - GPT-6.1 Terra (Xhigh)** at #13, index 48.2.
+- New: **Codex - GPT-6.1 Terra (Max)** at #14, index 48.1.
+- New: **Codex - DeepSeek V4.1 Flash (Max)** at #15, index 47.3.
+- New: **Grok Build - Grok 4.7 (Xhigh)** at #16, index 46.6.
+- New: **Codex - GPT-6.1 Terra (High)** at #17, index 46.3.
+- New: **DeepSeek Harness - DeepSeek V4.1 Flash 1017 (Max)** at #18, index 46.3.
+- New: **Muse Code - Muse Spark 1.3 (Max)** at #19, index 45.7.
+- New: **Claude Code - Step 5 Preview** at #20, index 43.1.
+- New: **Codex - GPT-6.1 Terra (Medium)** at #21, index 42.0.
+- New: **Kimi Code CLI - Kimi K3 (Max)** at #22, index 41.4.
+- New: **Codex - GPT-6.1 Terra (Non-reasoning)** at #24, index 39.2.
+- New: **Claude Code - Claude Haiku 5.5 (Max)** at #25, index 37.3.
+- New: **Codex - GPT-6.1 Terra (Low)** at #26, index 34.9.
+- New: **Antigravity SDK - Gemini 3.8 Flash (High)** at #27, index 33.3.
+- New: **Codex - GPT-6 Luna (Max)** at #28, index 31.1.
+- New: **Muse Code - Muse Spark Open (Xhigh)** at #29, index 26.3.
+- Removed: Antigravity CLI - Gemini 4 Argon (high) (was index 53.2).
+- Removed: Antigravity SDK - Gemini 3.8 Flash (high) (was index 33.3).
+- Removed: Claude Code - Fable 5.1 (max) (with fallback) (was index 57.6).
+- Removed: Claude Code - Haiku 5.5 (max) (was index 37.3).
+- Removed: Claude Code - Opus 5.5 (max) (was index 61.7).
+- Removed: Claude Code - Sonnet 5.5 (max) (was index 59.3).
+- Removed: Claude Code - Step 5 Preview ({'subagents': True}) (was index 43.1).
+- Removed: Codex - DeepSeek V4.1 Flash (max) (was index 47.3).
+- Removed: Codex - GPT-6 Astra (max) (was index 54.7).
+- Removed: Codex - GPT-6 Luna (max) (was index 31.1).
+- Removed: Codex - GPT-6.1 Sol (max) (was index 54.1).
+- Removed: Codex - GPT-6.1 Terra (high) (was index 46.3).
+- Removed: Codex - GPT-6.1 Terra (low) (was index 34.9).
+- Removed: Codex - GPT-6.1 Terra (max) (was index 48.1).
+- Removed: Codex - GPT-6.1 Terra (medium) (was index 42.0).
+- Removed: Codex - GPT-6.1 Terra (none) (was index 39.2).
+- Removed: Codex - GPT-6.1 Terra (xhigh) (was index 48.2).
+- Removed: DeepSeek Harness - DeepSeek V4.1 Flash 1017 (max) (was index 46.3).
+- Removed: Grok Build - Grok 4.7 (xhigh) (was index 46.6).
+- Removed: Kimi Code CLI - Kimi K3 (was index 41.4).
+- Removed: Muse Code - Muse Spark 1.3 (max) (was index 45.7).
+- Removed: Muse Code - Muse Spark Open (xhigh) (was index 26.3).
+- Removed: Muse Code - Muse Wonder (max) (was index 52.0).
+- Removed: Muse Code - Muse Wonder Full (max) (was index 58.9).
+- Removed: Opencode - GLM-5.3 (max) (was index 48.9).
+
 ## 2026-10-27
 
 - New: **Codex - GPT-6.1 Terra (xhigh)** at #13, index 48.2.
