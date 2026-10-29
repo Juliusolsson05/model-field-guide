@@ -4,6 +4,12 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-10-29
+
+- New: **GitHub Copilot - Copilot Fusion (Max)** at #3, index 59.9.
+- New: **Antigravity CLI - Gemini 4 Carbon (High)** at #4, index 59.4.
+- Antigravity CLI - Gemini 4 Argon (High): $5.86 -> $11.73 per task.
+
 ## 2026-10-28
 
 - New: **Claude Code - Claude Opus 5.5 (Max, Default Fallback)** at #1, index 61.7.
