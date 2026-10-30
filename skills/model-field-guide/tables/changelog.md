@@ -4,6 +4,13 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-10-30
+
+- New: **GitHub Copilot - Copilot Fusion (max)** at #3, index 59.9.
+- New: **Mistral Vibe - Mistral Large 4 (High)** at #15, index 48.3.
+- New: **Mistral Vibe - Mistral Large 4 (Medium)** at #29, index 35.4.
+- Removed: GitHub Copilot - Copilot Fusion (Max) (was index 59.9).
+
 ## 2026-10-29
 
 - New: **GitHub Copilot - Copilot Fusion (Max)** at #3, index 59.9.
