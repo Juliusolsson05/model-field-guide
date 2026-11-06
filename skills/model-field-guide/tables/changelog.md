@@ -4,6 +4,12 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-11-06
+
+- Removed: Mistral Vibe - Mistral Large 4 (Medium) (was index 35.4).
+- Mistral Vibe - Mistral Large 4 (High): index 48.3 -> 35.4 (now #28).
+- Mistral Vibe - Mistral Large 4 (High): $1.26 -> $0.78 per task.
+
 ## 2026-10-30
 
 - New: **GitHub Copilot - Copilot Fusion (max)** at #3, index 59.9.
