@@ -4,6 +4,11 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-11-10
+
+- New: **Muse Code - Muse Ember (Max)** at #21, index 45.9.
+- New: **Muse Code - Muse Ember (Xhigh)** at #26, index 39.8.
+
 ## 2026-11-06
 
 - Removed: Mistral Vibe - Mistral Large 4 (Medium) (was index 35.4).
