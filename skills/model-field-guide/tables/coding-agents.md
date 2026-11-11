@@ -11,7 +11,7 @@ Each row is an agent product running one model at one effort level. The index is
 | 1 | Claude Code | Claude Opus 5.5 (Max, Default Fallback) | **61.7** | n/a | 63.1 | 65.9 | $11.42 | 61 | 8.7% |
 | 2 | Devin Fusion CLI | Claude Opus 5.5 Max + GPT-6 Luna High | **61.5** | n/a | 62.6 | 68.3 | $8.00 | 51 | 0.0% |
 | 3 | GitHub Copilot | Copilot Fusion (max) | **59.9** | n/a | 71.2 | 57.0 | $5.59 | 36 | 0.0% |
-| 4 | Antigravity CLI | Gemini 4 Carbon (High) *(unavailable)* | **59.4** | n/a | 63.6 | 63.7 | $7.74 | 30 | 0.0% |
+| 4 | Antigravity CLI | Gemini 4 Carbon (High) | **59.4** | n/a | 63.6 | 63.7 | $7.74 | 30 | 0.0% |
 | 5 | Claude Code | Claude Sonnet 5.5 (Max, Default Fallback) | **59.3** | n/a | 66.2 | 64.2 | $13.30 | 80 | 4.5% |
 | 6 | Muse Code | Muse Wonder Full (Max) | **58.9** | n/a | 59.1 | 68.8 | n/a | 35 | 0.0% |
 | 7 | Devin Fusion CLI | Claude Fable 5.1 XHigh + SWE-2 Medium *(alt config)* | **58.7** | n/a | 56.1 | 68.3 | $8.20 | 38 | 7.2% |
