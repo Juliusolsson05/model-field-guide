@@ -4,6 +4,12 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-11-12
+
+- New: **Mistral Vibe - Mistral Large 4 (Medium)** at #31, index 35.4.
+- Mistral Vibe - Mistral Large 4 (High): index 35.4 -> 48.3 (now #15).
+- Mistral Vibe - Mistral Large 4 (High): $0.78 -> $1.26 per task.
+
 ## 2026-11-10
 
 - New: **Muse Code - Muse Ember (Max)** at #21, index 45.9.
