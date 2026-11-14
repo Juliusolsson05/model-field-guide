@@ -8,42 +8,35 @@ Each row is an agent product running one model at one effort level. The index is
 
 | # | Agent | Model (effort) | Index | DeepSWE | Terminal-Bench 4 | SWE-Atlas QnA | $ / task | Min / task | Refusal |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | Claude Code | Claude Opus 5.5 (Max, Default Fallback) | **61.7** | n/a | 63.1 | 65.9 | $11.42 | 61 | 8.7% |
-| 2 | Devin Fusion CLI | Claude Opus 5.5 Max + GPT-6 Luna High | **61.5** | n/a | 62.6 | 68.3 | $8.00 | 51 | 0.0% |
-| 3 | GitHub Copilot | Copilot Fusion (max) | **59.9** | n/a | 71.2 | 57.0 | $5.59 | 36 | 0.0% |
-| 4 | Antigravity CLI | Gemini 4 Carbon (High) | **59.4** | n/a | 63.6 | 63.7 | $7.74 | 30 | 0.0% |
-| 5 | Claude Code | Claude Sonnet 5.5 (Max, Default Fallback) | **59.3** | n/a | 66.2 | 64.2 | $13.30 | 80 | 4.5% |
-| 6 | Muse Code | Muse Wonder Full (Max) | **58.9** | n/a | 59.1 | 68.8 | n/a | 35 | 0.0% |
-| 7 | Devin Fusion CLI | Claude Fable 5.1 XHigh + SWE-2 Medium *(alt config)* | **58.7** | n/a | 56.1 | 68.3 | $8.20 | 38 | 7.2% |
-| 8 | Claude Code | Claude Fable 5.1 (Max, Default Fallback) *(alt config)* | **57.6** | n/a | 57.6 | 66.4 | $11.53 | 35 | 9.1% |
-| 9 | Codex | GPT-6 Astra (Max) | **54.7** | n/a | 55.6 | 59.1 | $7.04 | 25 | 1.2% |
-| 10 | Codex | GPT-6.1 Sol (Max) | **54.1** | n/a | 53.0 | 59.9 | $1.50 | 24 | 1.3% |
-| 11 | Antigravity CLI | Gemini 4 Argon (High) | **53.2** | n/a | 56.1 | 55.1 | $11.73 | 35 | 0.0% |
-| 12 | Devin Fusion CLI | GPT-6 Astra XHigh + SWE-2 Medium *(alt config)* | **53.1** | n/a | 50.0 | 60.2 | $4.34 | 21 | 2.2% |
-| 13 | Muse Code | Muse Wonder (Max) | **52.0** | n/a | 48.0 | 61.6 | $8.05 | 24 | 0.0% |
-| 14 | Opencode | GLM-5.3 (Max) | **48.9** | n/a | 39.9 | 58.6 | $5.23 | 56 | 0.0% |
-| 15 | Mistral Vibe | Mistral Large 4 (High) | **48.3** | n/a | 41.4 | 58.9 | $1.26 | 48 | 0.0% |
-| 16 | Codex | GPT-6.1 Terra (Xhigh) | **48.2** | n/a | 46.0 | 53.8 | $0.69 | 16 | 0.0% |
-| 17 | Codex | GPT-6.1 Terra (Max) | **48.1** | n/a | 48.5 | 54.0 | $1.24 | 26 | 0.0% |
-| 18 | Codex | DeepSeek V4.1 Flash (Max) *(alt config)* | **47.3** | n/a | 28.3 | 61.0 | $0.39 | 38 | 0.0% |
-| 19 | Grok Build | Grok 4.7 (Xhigh) | **46.6** | n/a | 33.3 | 62.9 | $9.48 | 36 | 0.0% |
-| 20 | Codex | GPT-6.1 Terra (High) *(alt config)* | **46.3** | n/a | 42.4 | 53.0 | $0.54 | 13 | 0.0% |
-| 21 | DeepSeek Harness | DeepSeek V4.1 Flash 1017 (Max) | **46.3** | n/a | 30.8 | 61.6 | $0.30 | 21 | 0.0% |
-| 22 | Muse Code | Muse Ember (Max) | **45.9** | n/a | 42.9 | 54.8 | n/a | 19 | 0.0% |
-| 23 | Muse Code | Muse Spark 1.3 (Max) *(alt config)* | **45.7** | n/a | 31.8 | 58.6 | $3.91 | 23 | 0.0% |
-| 24 | Claude Code | Step 5 Preview *(alt config)* | **43.1** | n/a | 30.3 | 58.6 | $1.84 | 61 | 0.0% |
-| 25 | Codex | GPT-6.1 Terra (Medium) *(alt config)* | **42.0** | n/a | 35.4 | 47.0 | $0.39 | 10 | 0.0% |
-| 26 | Kimi Code CLI | Kimi K3 (Max) | **41.4** | n/a | 21.2 | 59.9 | $5.17 | 63 | 0.0% |
-| 27 | Muse Code | Muse Ember (Xhigh) *(alt config)* | **39.8** | n/a | 28.3 | 54.3 | n/a | 21 | 0.0% |
-| 28 | Claude Code | Qwen3.8 Max *(alt config)* | **39.2** | n/a | 16.7 | 56.2 | $3.80 | 76 | 0.0% |
-| 29 | Codex | GPT-6.1 Terra (Non-reasoning) *(alt config)* | **39.2** | n/a | 25.3 | 46.2 | $0.45 | 10 | 0.0% |
-| 30 | Claude Code | Claude Haiku 5.5 (Max) *(alt config)* | **37.3** | n/a | 30.8 | 33.9 | $2.67 | 71 | 0.5% |
-| 31 | Mistral Vibe | Mistral Large 4 (Medium) *(alt config)* | **35.4** | n/a | 26.3 | 44.6 | $0.78 | 39 | 0.0% |
-| 32 | Codex | GPT-6.1 Terra (Low) *(alt config)* | **34.9** | n/a | 25.3 | 38.7 | $0.20 | 6 | 0.2% |
-| 33 | Antigravity SDK | Gemini 3.8 Flash (High) *(alt config)* | **33.3** | n/a | 14.6 | 44.4 | $2.51 | 13 | 0.0% |
-| 34 | Codex | GPT-6 Luna (Max) *(alt config)* | **31.2** | n/a | 15.7 | 38.4 | $0.16 | 21 | 0.0% |
-| 35 | Muse Code | Muse Spark Open (Xhigh) *(alt config)* | **26.3** | n/a | 5.6 | 50.8 | $3.54 | 26 | 0.0% |
-| 36 | Mirror | Beam 1.0 *(alt config)* | **20.5** | n/a | 3.5 | 37.6 | $0.32 | 39 | 0.0% |
+| 1 | Claude Code | Claude Fable 5.2 (Xhigh, Default Fallback) | **58.5** | n/a | 64.1 | 62.1 | $15.47 | 53 | 6.2% |
+| 2 | Devin Fusion CLI | Claude Opus 5.5 Max + GPT-6 Luna High | **58.4** | n/a | 62.6 | 68.3 | $8.75 | 55 | 9.4% |
+| 3 | Claude Code | Claude Fable 5.2 (High, Default Fallback) *(alt config)* | **58.2** | n/a | 64.1 | 61.8 | $7.51 | 31 | 5.6% |
+| 4 | Claude Code | Claude Opus 5.5 (Max, Default Fallback) | **58.2** | n/a | 64.6 | 65.9 | $12.61 | 65 | 8.8% |
+| 5 | Claude Code | Claude Sonnet 5.5 (Max, Default Fallback) | **56.3** | n/a | 65.7 | 64.2 | $11.40 | 87 | 4.5% |
+| 6 | Claude Code | Claude Fable 5.2 (Max, Default Fallback) *(alt config)* | **55.7** | n/a | 63.1 | 60.5 | $44.22 | 130 | 7.1% |
+| 7 | Antigravity CLI | Gemini 4 Carbon (High) | **55.5** | n/a | 64.6 | 63.7 | $7.13 | 34 | 0.0% |
+| 8 | Muse Code | Muse Wonder Full (Max) *(unavailable)* | **54.5** | n/a | 59.6 | 68.8 | n/a | 34 | 0.0% |
+| 9 | Codex | GPT-6 Astra (Max) | **53.1** | n/a | 57.6 | 59.1 | $7.63 | 26 | 1.2% |
+| 10 | Claude Code | Claude Fable 5.2 (Medium, Default Fallback) *(alt config)* | **53.0** | n/a | 59.6 | 63.7 | $2.89 | 15 | 4.8% |
+| 11 | Claude Code | Claude Fable 5.1 (Max, Default Fallback) *(alt config)* | **52.5** | n/a | 58.1 | 66.4 | $11.70 | 36 | 9.3% |
+| 12 | Codex | GPT-6.1 Sol (Max) | **52.2** | n/a | 54.0 | 59.9 | $1.51 | 22 | 1.3% |
+| 13 | Codex | GPT-6.1 Terra (Max) | **48.6** | n/a | 50.5 | 54.0 | $1.53 | 28 | 0.0% |
+| 14 | Kimi Code CLI | Kimi K3.1 Pro | **48.6** | n/a | 67.2 | 56.7 | $2.94 | 42 | 0.0% |
+| 15 | Claude Code | Claude Fable 5.2 (Low, Default Fallback) *(alt config)* | **48.0** | n/a | 53.0 | 59.9 | $2.49 | 13 | 4.9% |
+| 16 | Antigravity CLI | Gemini 4 Argon (High) | **45.5** | n/a | 56.6 | 55.1 | $6.84 | 38 | 0.0% |
+| 17 | Muse Code | Muse Wonder (Max) | **44.5** | n/a | 47.5 | 61.6 | $7.59 | 27 | 0.0% |
+| 18 | Grok Build | Grok 4.7 (Xhigh) | **41.6** | n/a | 32.3 | 62.9 | $15.35 | 37 | 0.0% |
+| 19 | Mistral Vibe | Mistral Large 4 (High) | **40.6** | n/a | 42.4 | 58.9 | $1.34 | 49 | 0.0% |
+| 20 | Opencode | GLM-5.3 (Max) | **40.1** | n/a | 40.4 | 58.6 | $5.41 | 53 | 0.0% |
+| 21 | Muse Code | Muse Ember (Max) | **39.7** | n/a | 43.4 | 54.8 | $0.22 | 20 | 0.0% |
+| 22 | DeepSeek Harness | DeepSeek V4.1 Flash 1017 (Max) | **36.8** | n/a | 28.3 | 61.6 | $0.32 | 31 | 0.0% |
+| 23 | Muse Code | Muse Spark 1.3 (Max) *(alt config)* | **36.8** | n/a | 29.8 | 58.6 | $4.34 | 24 | 0.0% |
+| 24 | Claude Code | Step 5 Preview *(alt config)* | **35.8** | n/a | 30.3 | 58.6 | $3.55 | 60 | 0.0% |
+| 25 | Claude Code | Qwen3.8 Max *(alt config)* | **32.7** | n/a | 17.2 | 56.2 | $4.03 | 81 | 0.0% |
+| 26 | Claude Code | Claude Haiku 5.5 (Max) *(alt config)* | **29.6** | n/a | 31.8 | 33.9 | $2.25 | 77 | 0.5% |
+| 27 | Mistral Vibe | Mistral Large 4 (Medium) *(alt config)* | **29.6** | n/a | 26.3 | 44.6 | $1.02 | 43 | 0.0% |
+| 28 | Codex | GPT-6 Luna (Max) *(alt config)* | **25.9** | n/a | 15.2 | 38.4 | $0.19 | 24 | 0.0% |
+| 29 | Mirror | Beam 1.0 *(alt config)* | **15.5** | n/a | 4.0 | 37.6 | $0.31 | 40 | 0.0% |
 
 ## Best score for the money
 
@@ -51,27 +44,27 @@ Index points per dollar per task. Only meaningful between setups that are good e
 
 | Agent | Model (effort) | Index | $ / task | Index per $ |
 |---|---|---|---|---|
-| Codex | GPT-6 Luna (Max) | 31.2 | $0.16 | 195 |
-| Codex | GPT-6.1 Terra (Low) | 34.9 | $0.20 | 174 |
-| DeepSeek Harness | DeepSeek V4.1 Flash 1017 (Max) | 46.3 | $0.30 | 154 |
-| Codex | DeepSeek V4.1 Flash (Max) | 47.3 | $0.39 | 121 |
-| Codex | GPT-6.1 Terra (Medium) | 42.0 | $0.39 | 108 |
-| Codex | GPT-6.1 Terra (Non-reasoning) | 39.2 | $0.45 | 87 |
-| Codex | GPT-6.1 Terra (High) | 46.3 | $0.54 | 86 |
-| Codex | GPT-6.1 Terra (Xhigh) | 48.2 | $0.69 | 70 |
+| Muse Code | Muse Ember (Max) | 39.7 | $0.22 | 180 |
+| Codex | GPT-6 Luna (Max) | 25.9 | $0.19 | 136 |
+| DeepSeek Harness | DeepSeek V4.1 Flash 1017 (Max) | 36.8 | $0.32 | 115 |
+| Mirror | Beam 1.0 | 15.5 | $0.31 | 50 |
+| Codex | GPT-6.1 Sol (Max) | 52.2 | $1.51 | 35 |
+| Codex | GPT-6.1 Terra (Max) | 48.6 | $1.53 | 32 |
+| Mistral Vibe | Mistral Large 4 (High) | 40.6 | $1.34 | 30 |
+| Mistral Vibe | Mistral Large 4 (Medium) | 29.6 | $1.02 | 29 |
 
 ## Fastest
 
 | Agent | Model (effort) | Index | Min / task |
 |---|---|---|---|
-| Codex | GPT-6.1 Terra (Low) | 34.9 | 6 |
-| Codex | GPT-6.1 Terra (Non-reasoning) | 39.2 | 10 |
-| Codex | GPT-6.1 Terra (Medium) | 42.0 | 10 |
-| Codex | GPT-6.1 Terra (High) | 46.3 | 13 |
-| Antigravity SDK | Gemini 3.8 Flash (High) | 33.3 | 13 |
-| Codex | GPT-6.1 Terra (Xhigh) | 48.2 | 16 |
-| Muse Code | Muse Ember (Max) | 45.9 | 19 |
-| Codex | GPT-6 Luna (Max) | 31.2 | 21 |
+| Claude Code | Claude Fable 5.2 (Low, Default Fallback) | 48.0 | 13 |
+| Claude Code | Claude Fable 5.2 (Medium, Default Fallback) | 53.0 | 15 |
+| Muse Code | Muse Ember (Max) | 39.7 | 20 |
+| Codex | GPT-6.1 Sol (Max) | 52.2 | 22 |
+| Codex | GPT-6 Luna (Max) | 25.9 | 24 |
+| Muse Code | Muse Spark 1.3 (Max) | 36.8 | 24 |
+| Codex | GPT-6 Astra (Max) | 53.1 | 26 |
+| Muse Code | Muse Wonder (Max) | 44.5 | 27 |
 
 ---
 
