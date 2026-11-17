@@ -4,6 +4,10 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-11-17
+
+- New: **Antigravity CLI - Gemini 4 Hydrogen (Xhigh)** at #12, index 52.3.
+
 ## 2026-11-14
 
 - New: **Claude Code - Claude Fable 5.2 (Xhigh, Default Fallback)** at #1, index 58.5.
