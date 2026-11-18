@@ -4,6 +4,19 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-11-18
+
+- New: **Codex - GPT-6.2 Astra (Max)** at #9, index 53.5.
+- New: **Codex - GPT-6.2 Astra (Xhigh)** at #11, index 53.1.
+- New: **Codex - GPT-6.2 Astra (High)** at #15, index 52.3.
+- New: **Codex - GPT-6.2 Sol (Xhigh)** at #17, index 49.8.
+- New: **Codex - GPT-6.2 Astra (Medium)** at #18, index 49.1.
+- New: **Codex - GPT-6.2 Sol (Max)** at #20, index 48.6.
+- New: **Codex - GPT-6.2 Sol (High)** at #23, index 47.5.
+- New: **Codex - GPT-6.2 Sol (Medium)** at #25, index 45.4.
+- New: **Codex - GPT-6.2 Sol (Low)** at #31, index 37.2.
+- New: **Codex - GPT-6.2 Astra (Low)** at #35, index 35.6.
+
 ## 2026-11-17
 
 - New: **Antigravity CLI - Gemini 4 Hydrogen (Xhigh)** at #12, index 52.3.
