@@ -4,6 +4,11 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-11-19
+
+- New: **Antigravity CLI - Gemini 4 Neon (Xhigh)** at #1, index 58.6.
+- Antigravity CLI - Gemini 4 Carbon (High): $7.13 -> $9.75 per task.
+
 ## 2026-11-18
 
 - New: **Codex - GPT-6.2 Astra (Max)** at #9, index 53.5.
