@@ -4,6 +4,12 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-11-21
+
+- New: **OpenCode - GLM-5.3 (Max)** at #30, index 40.1.
+- Removed: Opencode - GLM-5.3 (Max) (was index 40.1).
+- Antigravity CLI - Gemini 4 Argon (High): $6.84 -> $13.67 per task.
+
 ## 2026-11-19
 
 - New: **Antigravity CLI - Gemini 4 Neon (Xhigh)** at #1, index 58.6.
