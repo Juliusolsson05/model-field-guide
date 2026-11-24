@@ -4,6 +4,34 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-11-24
+
+- New: **Claude Code - GLM-5.3-Flash (Max)** at #32, index 38.9.
+- New: **OpenCode - GLM-5.3-Flash (Max)** at #33, index 38.5.
+- New: **mini-swe-agent - GLM-5.3-Flash (Max)** at #34, index 37.9.
+- New: **Kimi Code CLI - GLM-5.3-Flash (Max)** at #35, index 37.5.
+- New: **DeepSeek Harness - GLM-5.3-Flash (Max)** at #36, index 37.4.
+- New: **Mistral Vibe - GLM-5.3-Flash (Max)** at #39, index 36.8.
+- New: **Devin CLI - GLM-5.3-Flash** at #41, index 36.4.
+- New: **Grok Build - GLM-5.3-Flash (Max)** at #44, index 35.4.
+- New: **GitHub Copilot - GLM-5.3-Flash (Max)** at #45, index 35.2.
+- New: **Qwen Code - GLM-5.3-Flash (Max)** at #46, index 34.7.
+- New: **Muse Code - GLM-5.3-Flash (Max)** at #48, index 32.4.
+- New: **Pi - GLM-5.3-Flash (Max)** at #49, index 29.8.
+- New: **Codex - GLM-5.3-Flash (Max)** at #52, index 27.8.
+- New: **mini-swe-agent - GPT-6 Luna (Max)** at #54, index 25.1.
+- New: **Grok Build - GPT-6 Luna (Max)** at #55, index 24.8.
+- New: **Muse Code - GPT-6 Luna (Max)** at #56, index 23.2.
+- New: **OpenCode - GPT-6 Luna (Max)** at #57, index 22.9.
+- New: **Claude Code - GPT-6 Luna (Max)** at #58, index 22.2.
+- New: **DeepSeek Harness - GPT-6 Luna (Max)** at #59, index 21.9.
+- New: **Mistral Vibe - GPT-6 Luna (Max)** at #60, index 21.4.
+- New: **Pi - GPT-6 Luna (Max)** at #61, index 21.2.
+- New: **GitHub Copilot - GPT-6 Luna (Max)** at #62, index 21.1.
+- New: **Kimi Code CLI - GPT-6 Luna (Max)** at #63, index 20.4.
+- New: **Devin CLI - GPT-6 Luna (Max)** at #64, index 18.0.
+- New: **Qwen Code - GPT-6 Luna (Max)** at #65, index 17.2.
+
 ## 2026-11-21
 
 - New: **OpenCode - GLM-5.3 (Max)** at #30, index 40.1.
