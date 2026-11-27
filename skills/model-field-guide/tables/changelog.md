@@ -4,6 +4,11 @@
 
 What moved on the coding-agent leaderboard.
 
+## 2026-11-27
+
+- Antigravity CLI - Gemini 4 Argon (High): $13.67 -> $9.46 per task.
+- Claude Code - Step 5 Preview: $3.55 -> $5.99 per task.
+
 ## 2026-11-24
 
 - New: **Claude Code - GLM-5.3-Flash (Max)** at #32, index 38.9.
